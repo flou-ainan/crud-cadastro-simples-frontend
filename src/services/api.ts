@@ -1,5 +1,8 @@
-import axios from "axios";
+import axios, { AxiosInstance } from "axios";
 
-export const api = axios.create({
-    baseURL: "https://crud-cadastro-simples.onrender.com/"
+let api:AxiosInstance
+
+api = axios.create({
+    baseURL: "https://crud-cadastro-simples.onrender.com/"  
 })
+export {api}
